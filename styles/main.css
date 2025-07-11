@@ -1,0 +1,272 @@
+ /* AJOUTS ET MODIFICATIONS POUR UNE INTERACTIVITÉ RENFORCÉE */
+
+/* 1. Effet de surbrillance au survol */
+.highlight-item {
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+}
+
+.highlight-item:hover {
+  background: linear-gradient(90deg, rgba(110, 72, 170, 0.2), transparent);
+  padding-left: 15px;
+  transform: scale(1.02);
+  border-left: 3px solid var(--secondary);
+}
+
+/* 2. Animation de typewriter pour les titres */
+@keyframes typewriter {
+  from { width: 0 }
+  to { width: 100% }
+}
+  
+.section h2 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter 1.5s steps(40) 0.5s 1 normal both;
+  border-right: 3px solid var(--secondary); 
+}
+
+
+/* 3. Effet parallaxe sur les cartes */
+.card {
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.card:hover {
+  transform: perspective(1000px) rotateY(5deg) translateY(-10px);
+}
+
+/* 4. Bulles interactives */
+.fixed-list li {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.social-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.8rem;
+  flex-wrap: wrap;
+}
+
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+
+.fixed-list li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background: var(--secondary);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.fixed-list li:hover:before {
+  background: var(--primary);
+  transform: translateY(-50%) scale(1.5);
+  box-shadow: 0 0 10px rgba(157, 80, 187, 0.7);
+}
+
+/* 5. Gradient animé sur les titres */
+.gradient-text {
+  background: linear-gradient(90deg, var(--primary), var(--secondary), #4776E6);
+  background-size: 200% auto;
+  animation: gradientFlow 3s linear infinite;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% center }
+  100% { background-position: 200% center }
+}
+
+/* 6. Effet de profondeur */
+.profile-img {
+  box-shadow: 
+    0 0 0 5px rgba(110, 72, 170, 0.3),
+    0 0 30px 10px rgba(110, 72, 170, 0.2),
+    0 0 60px 20px rgba(110, 72, 170, 0.1);
+}
+
+/* 7. Animation de remplissage pour les dates */
+.timeline-date {
+  position: relative;
+  display: inline-block;
+}
+
+.timeline-date:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--secondary);
+  transition: width 0.3s ease;
+}
+
+.timeline-item:hover .timeline-date:after {
+  width: 100%;
+}
+
+/* 8. Effet de constellation pour le fond */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(157, 80, 187, 0.1) 0%, transparent 20%),
+    radial-gradient(circle at 80% 70%, rgba(110, 72, 170, 0.1) 0%, transparent 20%);
+  pointer-events: none;
+  z-index: -1;
+  animation: starPulse 8s infinite alternate;
+}
+
+@keyframes starPulse {
+  0% { opacity: 0.3 }
+  100% { opacity: 0.7 }
+}
+
+/* 9. Effet de vague sur les boutons */
+
+.social-btn {
+  padding: 0.6rem 1.2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  color: white !important;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-btn:after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.5s, opacity 1s;
+}
+
+.social-btn:hover:after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.social-btn:hover {
+  animation: bounce 0.5s;
+  transform: translateY(-3px);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+
+/* 10. Animation de rebond améliorée */
+@keyframes superBounce {
+  0%, 100% { transform: translateY(0) }
+  20% { transform: translateY(-10px) }
+  40% { transform: translateY(5px) }
+  60% { transform: translateY(-5px) }
+  80% { transform: translateY(2px) }
+}
+
+.animate-superBounce {
+  animation: superBounce 1s ease;
+}
+
+/* Appliquer aux éléments interactifs */
+.social-btn:hover, 
+.download-button:hover {
+  animation: superBounce 1s ease;
+}
+/* ===== CADRES POUR TOUTES LES SECTIONS ===== */
+.section-card {
+  border: 2px solid rgba(110, 72, 170, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.section-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  border-color: rgba(110, 72, 170, 0.5);
+}
+
+
+.moving-text-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #1a5276, #34495e);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.moving-text-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+/* Animation du texte */
+.moving-text-btn::after {
+  content: "Go to the link";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #F9CB28, #FF4D4D);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.moving-text-btn:hover::after {
+  opacity: 1;
+  animation: textSlide 0.6s ease;
+}
+
+@keyframes textSlide {
+  0% {
+      transform: translateX(-20px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
