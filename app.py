@@ -7,7 +7,7 @@ import time
 
 # --- CONFIGURATION ---
 st.set_page_config(
-    page_title="CV Digital | Ndiaye NIANG",
+    page_title="Portfolio | Ndiaye NIANG",
     page_icon="✨",
     layout="wide"
 )
