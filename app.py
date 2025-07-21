@@ -148,11 +148,22 @@ def professional_experience():
         </ul>
     </div>
     <div class="experience-item">
+        <h3>Lycée Bertène Juminer, Saint-Laurent-du-Maroni, Guyane, Professeur de Mathématiques et Sciences Numériques et Technologie (SNT)</h3>
+        <p class="period">Septembre 2022 - Avril 2023</p>
+        <ul class="fixed-list">
+            <li class="highlight-item">Enseignement des mathématiques de la seconde à la terminale, en adaptant les contenus aux différents niveaux et spécialités.</li>
+            <li class="highlight-item">Conception de séquences pédagogiques innovantes, intégrant des outils numériques et des situations-problèmes.</li>
+            <li class="highlight-item">Animation de cours de SNT en seconde, initiation des élèves aux enjeux du numérique : données, web, réseaux, programmation, etc.</li>
+            <li class="highlight-item"> Suivi individualisé des élèves, participation aux conseils de classe et à l’orientation.</li> 
+            <li class="highlight-item">Collaboration active avec l’équipe pédagogique pour la mise en place de projets interdisciplinaires.</li>
+        </ul>
+    </div>
+    <div class="experience-item">
         <h3>ELECTRE, Paris, Data scientist</h3>
         <p class="period">Septembre 2020 - Septembre 2021</p>
         <ul class="fixed-list">
-            <li class="highlight-item">Aider la direction Data Services à enrichir le moteur de recherche avec les nouveaux mots clés utilisés par les clients</li>
-            <li class="highlight-item">Mise en place d’un moteur de recommandation d’ouvrages en construisant un modèle de machine learning basé sur le NLP regroupant les ouvrages similaires</li>
+            <li class="highlight-item">Aider la direction Data Services à enrichir le moteur de recherche avec les nouveaux mots clés utilisés par les clients.</li>
+            <li class="highlight-item">Mise en place d’un moteur de recommandation d’ouvrages en construisant un modèle de machine learning basé sur le NLP regroupant les ouvrages similaires.</li>
         </ul>
     </div>
     <div class="experience-item">
