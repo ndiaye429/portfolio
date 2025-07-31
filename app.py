@@ -251,6 +251,7 @@ def skills_section():
 
 def certifications_section():
     content = """
+        <p><a href="https://www.credly.com/badges/ae75e68f-ea9d-46c1-b52f-fa080e17629e/linked_in?t=t03nrb" class="hover-move-effect"><button class="moving-text-btn">GCP Associate Data Practitioner</button></a></p>
         <p><a href="http://verify.skilljar.com/c/6csshpcgm3mp" class="hover-move-effect"><button class="moving-text-btn">Dataiku Core Designer Certificate</button></a></p>
         <p><a href="http://verify.skilljar.com/c/qn5omcm53ot3" class="hover-move-effect"><button class="moving-text-btn">Dataiku Avanced Designer Certificate</button></a></p>
         <p><a href="http://verify.skilljar.com/c/py5z6b6gieyo" class="hover-move-effect"><button class="moving-text-btn">Dataiku ML Practitioner Certificate</button></a></p>
