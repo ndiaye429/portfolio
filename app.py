@@ -261,6 +261,7 @@ def certifications_section():
 
 def projects_section():
     content = """
+        <p><a href="https://vision-sphere.streamlit.app/" class="hover-move-effect"><button class="moving-text-btn">Analyse intelligente des vidéos</button></a></p>
         <p><a href="https://modify-compress-files.streamlit.app/" class="hover-move-effect"><button class="moving-text-btn">Application de compression et de fusion de fichiers</button></a></p>
         <p><a href="https://github.com/ndiaye429/Mes_Projets_Machine_learning/blob/master/Classification_images/Projet_Resaux_de_neurones_CNN_Notebook.ipynb" class="hover-move-effect"><button class="moving-text-btn">Classification d'images</button></a></p>
         <p><a href="https://github.com/ndiaye429/Mes_Projets_Machine_learning/blob/master/G%C3%A9n%C3%A9ration_de_l%C3%A9gende/generation_de_legende.ipynb" class="hover-move-effect"><button class="moving-text-btn">Génération de légende</button></a></p>
