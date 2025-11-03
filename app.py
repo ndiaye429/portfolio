@@ -111,7 +111,7 @@ def professional_experience():
     content = """
     <div class="experience-item">
         <h3>EPSILON, Paris, Consultant Data scientist: Mission en interne</h3>
-        <p class="period">Février 2025 - Avril 2025</p>
+        <p class="period">Juillet 2025 - Octobre 2025</p>
         <ul class="fixed-list">
             <li class="highlight-item">Conception d'un dashboard interactif pour suivre et analyser l'empreinte carbone des projets internes d'Epsilon, en mettant en avant les émissions de CO2 en fonction de la localisation et du marché.</li>
             <li class="highlight-item"> Les données couvrent les émissions liées aux services GCP utilisés, réparties par mois, région, service, et catégorie d'usage.</li>
