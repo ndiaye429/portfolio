@@ -134,18 +134,11 @@ def professional_experience():
         <p class="highlight-item">
         Extraction Thématique et Analyse Sémantique des Verbatims à l'aide de Modèles de Langage Naturel.
         </p>
-        <p class="highlight-item">
-        Dans le cadre d’une analyse sémantique approfondie, j’ai conçu et déployé un pipeline de traitement de données textuelles basé sur des modèles avancés de NLP pour identifier les thèmes clés dans un corpus de verbatims.        
+        <p class="highlight-item">           
+        Pour nos besoins de connaissance client, d'étude marketing et de planning stratégique, j'ai développé une solution IA 100%\n automatique qui révèle les thématiques ou concepts exprimés par les utilisateurs dans des verbatims, avis ou commentaires. 
+        Cette solution rapide, automatique et fiable permet ainsi d’analyser des retours à propos d'une marque, d'un produit ou d'un service provenant aussi bien de consommateurs, de collaborateurs ou d’opérateurs. 
+        Notre solution est constituée d'une première étape de détection de thématiques, faisant usage d'une IA comme Google Gemini ou Azure OpenAI combinée avec des traitements data science comme du clustering, une étape d'exploration et d'édition interactive des thématiques détectées.
         </p>
-        <ul class="fixed-list">
-            <li class="highlight-item">Nettoyage et normalisation : Suppression des éléments non pertinents (caractères spéciaux, stopwords) et uniformisation linguistique (lemmatisation, tokenisation).</li>
-            <li class="highlight-item">Représentation vectorielle : Conversion des textes en vecteurs numériques à l’aide d’un modèle d’embedding, optimisant la capture des relations sémantiques et contextuelles des mots.</li>
-            <li class="highlight-item">Entraînement de BERT, un modèle de langage bidirectionnel, pour extraire les thèmes principaux et sous-jacents des verbatims.</li>
-            <li class="highlight-item">Analyse non supervisée (clustering sémantique) pour organiser et structurer les données autour des thématiques récurrentes.</li>
-            <li class="highlight-item">Validation des résultats avec des métriques pertinentes (cohérence thématique, pertinence des clusters).</li>
-            <li class="highlight-item">Identification des tendances majeures et des insights exploitables pour orienter des décisions stratégiques.</li>
-            <li class="highlight-item">Création d’un cadre réplicable pour l’analyse future de données textuelles à grande échelle.</li>
-        </ul>
     </div>
     <div class="experience-item">
         <h3>Lycée Bertène Juminer, Saint-Laurent-du-Maroni, Guyane, Professeur de Mathématiques et Sciences Numériques et Technologie (SNT)</h3>
